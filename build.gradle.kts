@@ -1,10 +1,18 @@
 plugins {
+    application
     id("java")
+    id("com.coditory.manifest") version "0.2.6"
+
+}
+
+tasks.jar {
+    manifest {
+        attributes("Main-Class" to "dk.medtrace.Main")
+    }
 }
 
 group = "dk.medtrace"
 version = "1.0-SNAPSHOT"
-
 repositories {
     mavenCentral()
 }
@@ -22,3 +30,4 @@ dependencies {
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
+
