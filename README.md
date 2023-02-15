@@ -1,5 +1,7 @@
 # README - TodoList
 
+CAUTION: This project is used only for the purposes of interviewing candidates. Do not use for any production purposes.
+
 This project generates an HTML file based on a ToDo-list.
 
 To build this project run
